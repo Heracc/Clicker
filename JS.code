@@ -1,7 +1,0 @@
-<button onclick="increasePoints();">Click Me</button>
-
-var points = 0;
-function increasePoints() {
-  points += pointsPerClick;
-  document.querySelector('#p').innerHTML = points;
-}
