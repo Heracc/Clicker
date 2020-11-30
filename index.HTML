@@ -1,2 +1,13 @@
 <body>
   <h1> Clicker! </h1>
+  
+  
+  <button onclick="increasePoints();">Click Me</button>
+
+<script>
+  var points = 0;
+function increasePoints() {
+  points += pointsPerClick;
+  document.querySelector('#p').innerHTML = points;
+}
+  </script></body>
