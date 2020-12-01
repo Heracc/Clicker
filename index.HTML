@@ -17,9 +17,6 @@ function increasePoints() {
   document.querySelector('#p').innerHTML = points;
 }
 function upPointsAClick() {
-  checkPoints();
-}
-function checkPoints() {
   if (points >= 50) {
     pointsPerClick += 1;
   } else {
@@ -29,6 +26,6 @@ function checkPoints() {
   }
   </style>
   document.getElementById(“NotEnoughPoints!“).style.opacity = 0;
-}
+  
   </script></body>
 </html>
