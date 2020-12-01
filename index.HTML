@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <script>
+    document.body.backgroundColor = “black”;
+  </script>
   <h1> Clicker! </h1>
   
   
@@ -14,8 +17,18 @@ function increasePoints() {
   document.querySelector('#p').innerHTML = points;
 }
 function upPointsAClick() {
-  pointsPerClick += 1;
-  document.querySelector('#h').innerHTML = pointsPerClick;
+  checkPoints();
+}
+function checkPoints() {
+  if (points >= 50) {
+    pointsPerClick += 1;
+  } else {
+   <style> 
+     #NotEnoughPoints! {
+       transition: opacity 100;
+  }
+  </style>
+  document.getElementById(“NotEnoughPoints!“).style.opacity = 0;
 }
   </script></body>
 </html>
