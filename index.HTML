@@ -5,13 +5,16 @@
   
   
   <button onclick="increasePoints();">Click Me</button><span id='p'></span>
-
+  <button onclick="upPointsAClick();">More points per click</button>
 <script>
   var points = 0;
   var pointsPerClick = 1;
 function increasePoints() {
   points += pointsPerClick;
   document.querySelector('#p').innerHTML = points;
+}
+function upPointsAClick() {
+  pointsPerClick += 1;
 }
   </script></body>
 </html>
