@@ -1,14 +1,25 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+body {
+  background-color: black;
+}
+
+#notenoughpoints {
+  opacity: 0;
+  transition: opacity .1s;
+}
+</style>
+</head>
 <body>
-  <script>
-    document.body.backgroundColor = “black”;
-  </script>
   <h1> Clicker! </h1>
   
   
   <button onclick="increasePoints()">Click Me</button><span id='p'></span>
   <button onclick="upPointsAClick()">More points per click</button><span id='h'></span>
+<div id="notenoughpoints">Not enough points!</div>
 <script>
   var points = 0;
   var pointsPerClick = 1;
@@ -19,14 +30,10 @@ function increasePoints() {
 function upPointsAClick() {
   if (points >= 50) {
     pointsPerClick += 1;
-    points - 50;
-  } else {
-   <style> 
-     #NotEnoughPoints! {
-       transition: opacity 100;
+  } else { 
+   
+ document.getElementById('notenoughpoints').style.opacity = 1;
   }
-  </style>
-  document.getElementById(“NotEnoughPoints!“).style.opacity = 0;
-  
   </script></body>
 </html>
+
